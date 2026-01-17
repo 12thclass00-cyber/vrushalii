@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Our Love Story - Memory</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=cormorant+garamond:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: var(--bs-secondary);
+            background-image: url('img/about.png');
+            /* Subtle texture if available, or just color */
+            background-blend-mode: overlay;
+        }
+
+        .letter-container {
+            max-width: 800px;
+            margin: 5rem auto;
+            padding: 4rem;
+            background-color: #fffbf0;
+            /* Old paper color */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            font-family: 'Cormorant Garamond', serif;
+            border-radius: 5px;
+        }
+
+        .letter-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #d4af37;
+            /* Gold border */
+            margin: 15px;
+            pointer-events: none;
+        }
+
+        .letter-header {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: var(--bs-dark);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .letter-body {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: #4a4a4a;
+        }
+
+        .letter-footer {
+            margin-top: 3rem;
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--bs-primary);
+        }
+
+        .editable-area {
+            width: 100%;
+            min-height: 300px;
+            border: none;
+            background: transparent;
+            font-family: 'Dancing Script', cursive;
+            /* or Cormorant Garamond */
+            font-size: 1.8rem;
+            resize: none;
+            outline: none;
+            background-image: linear-gradient(transparent, transparent 29px, #ccc 30px);
+            background-size: 100% 30px;
+            line-height: 30px;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar/Back Button -->
+    <a href="index.html" class="btn btn-primary btn-example back-btn"><i class="fa fa-arrow-left me-2"></i>Back to Our
+        Story</a>
+
+    <div class="container">
+        <div class="letter-container wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="letter-header">Our Adventures...</h1>
+
+            <div class="letter-body">
+                <textarea class="editable-area" placeholder="Write your beautiful memory here...">How can we forget that evening!! i loved that day whole day with you. just spending time with different things. i teached you archery that day remember. We had out first Bonfire that night. I remember how your eyes shined looking at the bonfire. i was in love with your eyes all over again...</textarea>
+            </div>
+
+            <div class="letter-footer">
+                With all my love,<br>
+                <span>Me</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
